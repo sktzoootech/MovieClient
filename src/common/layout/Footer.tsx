@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <>
-            <p>Footer Here</p>
+            <div className="text-center text-xs">Test Entry for WebJet @ddimalen</div>
         </>
     )
 }

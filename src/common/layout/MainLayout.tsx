@@ -1,10 +1,16 @@
 import Footer from "./Footer";
-import NavBar from "./NavBar";
+import LoadingSpinner3 from "../components/LoadingSpinner"
+import { useLoader } from "../hooks/useLoader";
+import Header from "./Header";
 
 const MainLayout = ({ children }: MainLayoutProps) => {
+
+    const loader = useLoader()
+    
     return (
         <>
-            <NavBar />
+            <div>{loader?.isLoading ? <LoadingSpinner3 /> : <></> }</div>
+            <Header />
             { children }
             <Footer />
         </>

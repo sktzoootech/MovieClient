@@ -1,10 +1,14 @@
+import MainLayout from "../layout/MainLayout";
 import RootRouter from "../routers/RootRouter";
+import { LoaderProvider } from "./LoaderContext";
 
 const AppProvider = () => {
     return (
-        <>
-            <RootRouter />
-        </>
+        <LoaderProvider>
+            <MainLayout>
+                <RootRouter />
+            </MainLayout>
+        </LoaderProvider>
     )
 }
 
