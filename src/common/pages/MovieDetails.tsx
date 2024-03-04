@@ -36,11 +36,16 @@ const MovieDetails = () => {
                             Cheapest @ {movieDetail?.price} from {arrayId?.length} provider(s)
                         </div>
                     </div>
-                </div>
-                
-
-                <div className="p-10"><Link to="/">Go back to list of movies</Link></div>
+                </div>                                
             </div>            
+
+            <div className="p-10 flex justify-center justify-center text-sm">
+                <Link to="/">
+                    <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                        List of movies
+                    </button>         
+                </Link>   
+            </div>
         </div>
     )
 }
