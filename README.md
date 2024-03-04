@@ -13,3 +13,11 @@ Most of the issues were taken care of the backend (please see backend readme).  
 Therefore I decided to implement the movie matching from the frontend and pass the ids of the providers that match to the backend.  
 
 There is nothign fancy about the frontend. I use tailwind to be able to scafolled the pages as fast and easy as possible.  
+
+## Technology Stack
+
+This frontend includes the following technology stack:
+
+* ReactJS
+* TypeScript
+* Tailwind CSS  
